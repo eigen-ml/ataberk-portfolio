@@ -1,0 +1,31 @@
+import { SectionHeading } from "@/components/section-heading";
+import { portfolioData } from "@/data/portfolio";
+
+export function BeyondEngineering() {
+  return (
+    <section
+      className="content-section beyond-section"
+      aria-labelledby="beyond-title"
+    >
+      <div className="shell">
+        <SectionHeading
+          id="beyond-title"
+          index="07"
+          eyebrow="Outside the Lab"
+          title="Beyond Engineering"
+          description="A small part of the workbench reserved for sound, electronics and hands-on experimentation."
+        />
+
+        <div className="beyond-grid">
+          {portfolioData.beyondEngineering.map((item) => (
+            <article key={item.title} data-reveal="item">
+              <span>{item.code}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
