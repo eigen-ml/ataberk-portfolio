@@ -9,6 +9,7 @@ export const site = {
   github: "https://github.com/eigen-ml",
   linkedin: "https://www.linkedin.com/in/ata-berk-ozturk/",
   cv: "/cv.pdf",
+  cvTr: "/cv-tr.pdf",
   sourceRepo: "https://github.com/eigen-ml/2d-magnetic-materials-ml",
 };
 
@@ -74,6 +75,7 @@ export type Content = {
   htmlLang: string;
   meta: { title: string; description: string };
   nav: { work: string; experience: string; cv: string; contact: string; menu: string };
+  cvFile: { href: string; downloadName: string };
   hero: {
     eyebrow: string;
     headlineLead: string;
@@ -104,6 +106,7 @@ export type Content = {
 
 const en: Content = {
   htmlLang: "en",
+  cvFile: { href: site.cv, downloadName: "Ata-Berk-Ozturk-CV.pdf" },
   meta: {
     title: "Ata Berk Öztürk | Physics Engineer",
     description:
@@ -243,6 +246,7 @@ const en: Content = {
 
 const tr: Content = {
   htmlLang: "tr",
+  cvFile: { href: site.cvTr, downloadName: "Ata-Berk-Ozturk-Ozgecmis.pdf" },
   meta: {
     title: "Ata Berk Öztürk | Fizik Mühendisi",
     description:

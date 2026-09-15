@@ -25,7 +25,7 @@ export function Nav({ locale, copy }: NavProps) {
   const links = [
     { href: "#work", label: copy.nav.work },
     { href: "#trajectory", label: copy.nav.experience },
-    { href: site.cv, label: copy.nav.cv, download: true },
+    { href: copy.cvFile.href, label: copy.nav.cv, download: copy.cvFile.downloadName },
     { href: "#contact", label: copy.nav.contact },
   ];
 
@@ -40,7 +40,7 @@ export function Nav({ locale, copy }: NavProps) {
               key={link.href}
               href={link.href}
               data-nav-link={link.download ? undefined : true}
-              download={link.download ? true : undefined}
+              download={link.download ?? undefined}
             >
               {link.label}
             </a>
@@ -76,7 +76,7 @@ export function Nav({ locale, copy }: NavProps) {
             <a
               key={link.href}
               href={link.href}
-              download={link.download ? true : undefined}
+              download={link.download ?? undefined}
               onClick={() => setOpen(false)}
             >
               {link.label}

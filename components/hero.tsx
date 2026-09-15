@@ -1,5 +1,5 @@
 import { Lattice } from "@/components/lattice";
-import { site, type Content } from "@/data/content";
+import type { Content } from "@/data/content";
 
 export function Hero({ copy }: { copy: Content }) {
   return (
@@ -17,7 +17,11 @@ export function Hero({ copy }: { copy: Content }) {
           <p className="hero-summary">{copy.hero.summary}</p>
 
           <div className="hero-actions">
-            <a className="button button-primary" href={site.cv} download>
+            <a
+              className="button button-primary"
+              href={copy.cvFile.href}
+              download={copy.cvFile.downloadName}
+            >
               {copy.hero.cv}
             </a>
             <a className="button button-ghost" href="#work">
