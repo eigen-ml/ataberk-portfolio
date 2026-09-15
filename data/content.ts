@@ -246,10 +246,10 @@ const tr: Content = {
   meta: {
     title: "Ata Berk Öztürk | Fizik Mühendisi",
     description:
-      "Ankara Üniversitesi'nde yoğunluk fonksiyoneli teorisi, iki boyutlu malzemeler ve yüksek başarımlı hesaplama üzerine çalışan fizik mühendisi.",
+      "Fizik mühendisi. Ankara Üniversitesi'nde yoğunluk fonksiyoneli teorisi, iki boyutlu malzemeler ve yüksek başarımlı hesaplama üzerine çalışıyor.",
   },
   nav: {
-    work: "İşler",
+    work: "Çalışmalar",
     experience: "Deneyim",
     cv: "Özgeçmiş",
     contact: "İletişim",
@@ -257,26 +257,26 @@ const tr: Content = {
   },
   hero: {
     eyebrow: "Fizik mühendisi · Hesaplamalı malzeme bilimi",
-    headlineLead: "Bir malzemenin ne yapacağını",
-    headlineAccent: "üretilmeden önce hesaplıyorum.",
+    headlineLead: "İki boyutlu malzemelerde",
+    headlineAccent: "elektronik yapı ve manyetizma.",
     summary:
-      "Ankara Üniversitesi'nde iki boyutlu malzemeler üzerinde yoğunluk fonksiyoneli teorisiyle hesap yapıyorum; bu hesapları tekrarlanabilir kılan veri ve küme iş akışlarını da kendim kuruyorum.",
+      "Ankara Üniversitesi Fizik Mühendisliği yüksek lisans öğrencisiyim. Yoğunluk fonksiyoneli teorisiyle iki boyutlu malzemeler üzerine hesap yapıyorum; bu hesapların koştuğu küme ortamını ve veri işini de kendim kuruyorum.",
     cv: "Özgeçmişi indir",
-    work: "Seçilmiş işler",
+    work: "Çalışmalar",
     skip: "Ana içeriğe geç",
   },
   band: {
     index: "01 — Elektronik yapı",
-    heading: "Bant aralığı nerede açılıyor",
+    heading: "Bant yapısı",
     body:
-      "Γ–M–K–Γ hattı boyunca bant yapıları, VASP ve Quantum ESPRESSO ile hesaplanıyor. Janus yüzeyini fonksiyonelleştirmek bu bantları kaydırıyor; işin asıl konusu da bu kayma.",
+      "Γ–M–K–Γ hattı boyunca bant hesapları, VASP ve Quantum ESPRESSO ile yapılıyor. Janus yüzeyine halojen eklendiğinde bantlar kayıyor ve bant aralığı değişiyor; çalışmanın konusu bu değişim.",
     energyAxis: "Enerji (eV)",
   },
   spins: {
-    index: "02 — Manyetik sıralanma",
-    heading: "Spinler hangi yöne bakıyor",
+    index: "02 — Manyetizma",
+    heading: "Manyetik sıralanma",
     body:
-      "Tezim, iki boyutlu malzemelerde manyetik sıralanmanın yalnızca bileşimden ne kadar tahmin edilebileceğini soruyor: 316.505 kayıt temizlenip modellerin güvenilebileceği 127.024 bileşime indirildi.",
+      "Tez konum, iki boyutlu malzemelerde manyetik sıralanmanın yalnızca bileşime bakarak ne kadar tahmin edilebildiği. 316.505 kayıt temizlenerek 127.024 bileşime indirildi.",
     metrics: [
       { value: "316.505", label: "Kayıt" },
       { value: "127.024", label: "Bileşim" },
@@ -284,12 +284,12 @@ const tr: Content = {
     ],
   },
   work: {
-    index: "03 — Seçilmiş işler",
+    index: "03 — Çalışmalar",
     items: [
       {
         title: "2B manyetik malzemelerde makine öğrenmesi",
         summary:
-          "Belirlenimci veri temizliği, bağımsız test kümesi ve sürekli entegrasyon — tezdeki sayılar doğrudan depodan yeniden üretilebiliyor.",
+          "Aynı girdiden hep aynı sonucu veren bir veri temizliği, ayrı tutulan bir test kümesi ve otomatik testler. Tezdeki sayılar depodan yeniden üretilebiliyor.",
         meta: "Python · scikit-learn",
         note: "Lisans tezi",
         href: site.sourceRepo,
@@ -298,29 +298,29 @@ const tr: Content = {
       {
         title: "Halojenle fonksiyonelleştirilmiş Janus tek katmanları",
         summary:
-          "Tamamlanmış TÜBİTAK 2209-A projesi: XSSe (X = Sn, Ti) yapılarında yapı modelleri ve elektronik ile manyetik tepkinin DFT hesapları.",
+          "Tamamlanan TÜBİTAK 2209-A projesi. XSSe (X = Sn, Ti) yapıları kuruldu, elektronik ve manyetik özellikleri DFT ile hesaplandı.",
         meta: "VASP · DFT",
         note: "Araştırmacı",
       },
       {
         title: "Kümeler, Slurm ve yazılım yığını",
         summary:
-          "Rocky Linux ve OpenHPC üzerinde bilimsel yazılım derleme, iş betikleri yazma, düğüm ve çekirdek başarımı ölçme.",
+          "Rocky Linux ve OpenHPC üzerinde bilimsel yazılımların derlenmesi, iş betiklerinin yazılması, düğüm ve çekirdek başarımının ölçülmesi.",
         meta: "Slurm · OpenHPC",
         note: "2025",
       },
     ],
   },
   trajectory: {
-    index: "04 — Yol",
-    heading: "İşin geçtiği yerler",
+    index: "04 — Deneyim",
+    heading: "Deneyim ve eğitim",
     items: [
       {
         period: "2026 —",
         role: "Fizik Mühendisliği yüksek lisansı",
         place: "Ankara Üniversitesi · devam ediyor",
         summary:
-          "İki boyutlu malzemelerde manyetik sıralanmayı bileşimden tahmin etme üzerine tez; DFT sonuçlarıyla makine öğrenmesini birleştiriyor.",
+          "Tez konusu: iki boyutlu malzemelerde manyetik sıralanmanın bileşimden tahmini. DFT sonuçları ile makine öğrenmesi birlikte kullanılıyor.",
         current: true,
       },
       {
@@ -328,7 +328,7 @@ const tr: Content = {
         role: "Araştırmacı",
         place: "Hesaplamalı Yoğun Madde Fiziği Grubu, Ankara Üniversitesi",
         summary:
-          "İki boyutlu malzemelerde DFT hesapları; elektronik ve manyetik özellikler ile malzeme analizinin veri tarafı üzerine.",
+          "İki boyutlu malzemelerde DFT hesapları. Elektronik ve manyetik özellikler ile malzeme verisinin işlenmesi üzerine çalışıyorum.",
         current: true,
       },
       {
@@ -336,14 +336,14 @@ const tr: Content = {
         role: "Stajyer",
         place: "Nükleer Bilimler Enstitüsü, Ankara Üniversitesi",
         summary:
-          "Nükleer bilimler hesaplama ortamları; Linux üzerinde Geant4 ve ROOT derleme ve çalıştırma.",
+          "Nükleer bilimler hesaplama ortamları. Linux üzerinde Geant4 ve ROOT derlendi ve çalıştırıldı.",
       },
       {
         period: "2025",
         role: "Mühendislik stajyeri",
         place: "EDULINE IT",
         summary:
-          "Rocky Linux tabanlı YBH ortamları, düğüm ve çekirdek başarım ölçümü, elle derlenmiş bilimsel yazılım yığınları.",
+          "Rocky Linux tabanlı yüksek başarımlı hesaplama ortamları, düğüm ve çekirdek başarım ölçümleri, elle derlenen bilimsel yazılım kurulumları.",
       },
       {
         period: "2022–26",
@@ -354,7 +354,7 @@ const tr: Content = {
   },
   toolkit: {
     index: "05 — Araçlar",
-    heading: "Gerçekten kullandıklarım",
+    heading: "Kullandığım araçlar",
     legend: {
       firstPrinciples: "İlk prensipler",
       computing: "Hesaplama",
@@ -371,10 +371,10 @@ const tr: Content = {
     ],
   },
   contact: {
-    heading: "Hesabı birlikte kuralım.",
+    heading: "İletişim",
     body:
-      "Ankara — hesaplamalı bilim, malzeme modelleme ve YBH pozisyonlarına açığım.",
-    aside: "Kümenin başında olmadığım zamanlarda elektronik müzik yapıyorum.",
+      "Ankara'da yaşıyorum. Hesaplamalı bilim, malzeme modelleme ve yüksek başarımlı hesaplama alanındaki pozisyonlara açığım.",
+    aside: "Boş zamanlarımda elektronik müzik üretiyorum.",
     emailLabel: "E-posta",
   },
   footer: { rights: "Ata Berk Öztürk" },
