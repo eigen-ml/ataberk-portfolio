@@ -11,15 +11,14 @@ export function BeyondEngineering() {
         <SectionHeading
           id="beyond-title"
           index="07"
-          eyebrow="Outside the Lab"
+          eyebrow="Outside work"
           title="Beyond Engineering"
-          description="A small part of the workbench reserved for sound, electronics and hands-on experimentation."
+          description="What I spend time on when I am not in front of a cluster."
         />
 
         <div className="beyond-grid">
           {portfolioData.beyondEngineering.map((item) => (
             <article key={item.title} data-reveal="item">
-              <span>{item.code}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>

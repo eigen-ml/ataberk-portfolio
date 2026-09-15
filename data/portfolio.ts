@@ -33,7 +33,6 @@ export type Experience = {
 
 export type TechnologyGroup = {
   category: string;
-  code: string;
   items: string[];
 };
 
@@ -44,7 +43,6 @@ export type Certification = {
 
 export type BeyondEngineeringItem = {
   title: string;
-  code: string;
   description: string;
 };
 
@@ -63,9 +61,9 @@ export const portfolioData = {
     specialism:
       "Computational Materials · DFT · HPC · Scientific Computing",
     summary:
-      "Ankara University Physics Engineering graduate and M.Sc. student working across electronic structure calculations, materials informatics and reproducible scientific workflows.",
+      "M.Sc. student in Physics Engineering at Ankara University. I run DFT calculations on two-dimensional materials and build the data and HPC workflows around them.",
     availability:
-      "Open to computational science, materials modelling and HPC opportunities",
+      "Open to positions in computational science, materials modelling and HPC",
     links: {
       email: "ataberk.ozturk.eng@outlook.com",
       github: "https://github.com/eigen-ml",
@@ -88,7 +86,7 @@ export const portfolioData = {
       title: "2D Magnetic Materials ML",
       category: "Materials Informatics · Machine Learning",
       description:
-        "A reproducible machine-learning and data-processing workflow for analysing large-scale 2D magnetic materials data.",
+        "A machine-learning and data-processing pipeline for large-scale 2D magnetic materials data, built for my B.Sc. thesis and kept as a public repository.",
       metrics: [
         { value: "316,505", label: "source records processed" },
         { value: "2,231", label: "conflicting records removed" },
@@ -122,11 +120,11 @@ export const portfolioData = {
       title: "DFT Workflows",
       category: "Computational Materials",
       description:
-        "Practical first-principles workflows spanning structure preparation, input generation, electronic structure calculations and post-processing.",
+        "Day-to-day VASP and Quantum ESPRESSO work on two-dimensional materials: building structures, generating inputs, running the calculations and processing the output.",
       details: [
-        "VASP and Quantum ESPRESSO calculation workflows",
-        "Structure and simulation input preparation",
-        "VASPKIT-assisted analysis and post-processing",
+        "Structure preparation and input generation",
+        "Relaxation, band structure and density of states calculations",
+        "Post-processing with VASPKIT and Python scripts",
       ],
       technologies: [
         "VASP",
@@ -142,28 +140,27 @@ export const portfolioData = {
       title: "HPC & Slurm Workflows",
       category: "High Performance Computing",
       description:
-        "Hands-on exploration of Linux-based scientific environments, job scheduling and reproducible batch-computing workflows.",
+        "Running scientific software on Linux clusters — writing the job scripts, compiling the software stack and measuring what the hardware actually does.",
       details: [
-        "Slurm job submission and resource requests",
-        "OpenHPC environment experimentation",
-        "Batch workload organisation for scientific computing",
+        "Slurm job scripts, resource requests and queue handling",
+        "Rocky Linux and OpenHPC cluster environments",
+        "Node and core benchmarking, custom-compiled software stacks",
       ],
       technologies: ["Linux", "Slurm", "OpenHPC", "Bash", "Python"],
       layout: "standard",
     },
     {
       number: "04",
-      title: "Scientific Workflow Automation",
-      category: "Scientific Software",
+      title: "Halogen-Functionalised Janus Monolayers",
+      category: "TÜBİTAK 2209-A · Researcher",
       description:
-        "Tools and experiments aimed at reducing repetitive work in VASP, Quantum ESPRESSO and HPC workflows.",
+        "A completed TÜBİTAK 2209-A undergraduate research project on halogen functionalisation of Janus XSSe (X = Sn, Ti) monolayers and its effect on their electronic and magnetic properties.",
       details: [
-        "Convergence automation and input generation",
-        "Output parsing and result summarisation",
-        "Slurm submission, failure detection and restart concepts",
+        "Structure models for halogen-functionalised Janus monolayers",
+        "DFT calculations of electronic and magnetic properties",
+        "Project report and results written up with the research group",
       ],
-      technologies: ["Python", "Bash", "VASP", "Quantum ESPRESSO", "Slurm"],
-      status: "In Development",
+      technologies: ["VASP", "DFT", "2D Materials", "Python", "Linux"],
       layout: "wide",
     },
   ] satisfies Project[],
@@ -202,34 +199,29 @@ export const portfolioData = {
   ] satisfies Experience[],
   research: [
     {
+      title: "2D Magnetic Materials",
+      description:
+        "Magnetic ordering in two-dimensional materials, and how far composition alone can predict it.",
+    },
+    {
+      title: "Janus Monolayers",
+      description:
+        "Functionalised Janus structures and the way surface chemistry shifts their electronic properties.",
+    },
+    {
       title: "Density Functional Theory",
       description:
-        "Electronic structure and computational materials modelling using first-principles methods.",
-      code: "DFT",
+        "Electronic structure calculations with VASP and Quantum ESPRESSO, and the convergence work behind them.",
     },
     {
-      title: "Computational Materials",
+      title: "Scientific Computing at Scale",
       description:
-        "Data-driven and numerical approaches to understanding materials properties.",
-      code: "MAT",
-    },
-    {
-      title: "High Performance Computing",
-      description:
-        "Scientific workflows, scheduling and reproducible computational environments.",
-      code: "HPC",
-    },
-    {
-      title: "Scientific Automation",
-      description:
-        "Tools that reduce repetitive simulation setup, monitoring and post-processing.",
-      code: "AUT",
+        "Getting these calculations to run reliably on clusters: scheduling, environments and data handling.",
     },
   ],
   technologies: [
     {
       category: "Computational Physics",
-      code: "CP-01",
       items: [
         "VASP",
         "Quantum ESPRESSO",
@@ -245,7 +237,6 @@ export const portfolioData = {
     },
     {
       category: "Scientific Computing",
-      code: "SC-02",
       items: [
         "Python",
         "NumPy",
@@ -259,12 +250,10 @@ export const portfolioData = {
     },
     {
       category: "HPC & Systems",
-      code: "HS-03",
       items: ["Linux", "Slurm", "OpenHPC", "Docker", "Bash", "WSL"],
     },
     {
       category: "Development",
-      code: "DV-04",
       items: [
         "Git",
         "GitHub",
@@ -309,16 +298,14 @@ export const portfolioData = {
   ] satisfies Certification[],
   beyondEngineering: [
     {
-      title: "Music Production",
-      code: "AUDIO-01",
+      title: "Beatbox & Music Production",
       description:
-        "I create and experiment with electronic music, combining technical sound design with creative production.",
+        "I beatbox and produce electronic music, and I compete internationally — most recently at the Grand Beatbox Battle in Warsaw.",
     },
     {
       title: "Hardware & Prototyping",
-      code: "PROTO-02",
       description:
-        "I have built simple prototyping projects with Arduino and ESP32, including a basic parking-sensor project.",
+        "Small Arduino and ESP32 builds, including a parking-sensor project.",
     },
   ] satisfies BeyondEngineeringItem[],
 } as const;

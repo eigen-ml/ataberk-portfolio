@@ -10,8 +10,8 @@ export function Projects() {
           id="work-title"
           index="01"
           eyebrow="Selected Work"
-          title="Scientific problems, structured as reproducible systems."
-          description="Selected work across materials informatics, first-principles modelling and scientific infrastructure."
+          title="Selected Work"
+          description="Projects across materials informatics, first-principles modelling and scientific computing."
         />
         <div className="projects-grid">
           {portfolioData.projects.map((project) => (

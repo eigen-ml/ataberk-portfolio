@@ -14,7 +14,7 @@ export function Experience() {
           index="02"
           eyebrow="Research & Engineering"
           title="Experience"
-          description="Research and engineering work across computational materials, HPC environments and scientific simulation tooling."
+          description="Where I have worked on computational materials and HPC so far."
         />
 
         <div className="experience-list">

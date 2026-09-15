@@ -12,9 +12,9 @@ export function TechStack() {
         <SectionHeading
           id="technologies-title"
           index="04"
-          eyebrow="Technical Toolkit"
+          eyebrow="Tools"
           title="Tools & Technologies"
-          description="A compact working toolkit for materials modelling, scientific computing, HPC and engineering simulation."
+          description="Software I use for materials modelling, scientific computing and HPC work."
         />
         <div className="stack-table">
           {portfolioData.technologies.map((group) => (
@@ -24,7 +24,6 @@ export function TechStack() {
               data-reveal="item"
             >
               <div className="stack-category">
-                <span>{group.code}</span>
                 <h3>{group.category}</h3>
               </div>
               <ul>

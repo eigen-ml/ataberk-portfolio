@@ -13,7 +13,7 @@ export function Education() {
           id="education-title"
           index="05"
           eyebrow="Education"
-          title="Physics engineering, from fundamentals to computation."
+          title="Education"
         />
         <div className="education-list">
           {portfolioData.education.map((item, index) => (

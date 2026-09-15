@@ -11,9 +11,9 @@ export function Certifications() {
         <SectionHeading
           id="certifications-title"
           index="06"
-          eyebrow="Professional Development"
-          title="Selected Certifications"
-          description="Focused training across quantum computing, optical simulation, HPC and engineering competency."
+          eyebrow="Training"
+          title="Certifications"
+          description="Training programmes I have completed."
         />
 
         <div className="certification-list">

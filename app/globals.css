@@ -492,8 +492,8 @@ button {
 .panel-body {
   display: grid;
   min-height: 335px;
-  padding: 2rem 1.2rem 2rem 1rem;
-  grid-template-columns: 2rem 1fr;
+  padding: 2rem 1.2rem 2rem 1.2rem;
+  grid-template-columns: 1fr;
 }
 
 .workflow-axis {
@@ -573,7 +573,6 @@ button {
   font-family: var(--font-geist-mono), monospace;
   font-size: 0.57rem;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
   animation: heroEnter 620ms 560ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 

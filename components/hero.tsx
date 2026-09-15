@@ -28,7 +28,7 @@ export function Hero() {
             {person.availability}
           </div>
 
-          <p className="eyebrow">{person.title} · Computational Scientist</p>
+          <p className="eyebrow">{person.title}</p>
           <h1 id="hero-title">{person.name}</h1>
           <p className="hero-specialism">
             Computational Materials <span>·</span> DFT <span>·</span> HPC{" "}
@@ -103,47 +103,40 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="science-panel" aria-label="Scientific workflow diagram">
+        <div className="science-panel" aria-label="Current work">
           <div className="panel-header">
-            <span>ABÖ / COMPUTE</span>
-            <span>WORKFLOW 01</span>
+            <span>Current work</span>
+            <span>Since 2024</span>
           </div>
           <div className="panel-body">
-            <div className="workflow-axis" aria-hidden="true">
-              <span>01</span>
-              <span>02</span>
-              <span>03</span>
-              <span>04</span>
-            </div>
             <ol className="workflow-list">
               <li>
-                <span>Structure</span>
-                <small>INPUT</small>
+                <span>Thesis</span>
+                <small>2D magnetic materials</small>
               </li>
               <li>
-                <span>First-principles model</span>
-                <small>SOLVER</small>
+                <span>Method</span>
+                <small>DFT · VASP / QE</small>
               </li>
               <li>
-                <span>Parallel calculation</span>
-                <small>HPC</small>
+                <span>Data</span>
+                <small>316K records processed</small>
               </li>
               <li>
-                <span>Electronic properties</span>
-                <small>OUTPUT</small>
+                <span>Compute</span>
+                <small>Linux · Slurm</small>
               </li>
             </ol>
           </div>
           <div className="panel-footer">
-            <span>VASP / QE</span>
-            <span>PYTHON / SLURM</span>
+            <span>Ankara University</span>
+            <span>Physics Engineering</span>
           </div>
         </div>
       </div>
 
       <div className="shell hero-footer">
         <span>{person.location}</span>
-        <span>Scroll to explore</span>
       </div>
     </section>
   );

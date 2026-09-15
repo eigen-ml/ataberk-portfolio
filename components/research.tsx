@@ -12,9 +12,9 @@ export function Research() {
         <SectionHeading
           id="research-title"
           index="03"
-          eyebrow="Research & Technical Interests"
-          title="Where physics meets computation."
-          description="Areas of continued study and practical experimentation."
+          eyebrow="Research"
+          title="Research Focus"
+          description="What I currently work on and keep reading about."
         />
         <div className="research-grid">
           {portfolioData.research.map((interest, index) => (
@@ -25,7 +25,6 @@ export function Research() {
             >
               <div className="research-index">
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <span>{interest.code}</span>
               </div>
               <h3>{interest.title}</h3>
               <p>{interest.description}</p>

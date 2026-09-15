@@ -45,10 +45,10 @@ export function Contact() {
       <div className="shell contact-layout" data-reveal="section">
         <div className="contact-copy">
           <p className="eyebrow">08 · Contact</p>
-          <h2 id="contact-title">Let’s work on technically demanding problems.</h2>
+          <h2 id="contact-title">Get in touch</h2>
           <p>
             For computational science, materials modelling, HPC or scientific
-            software opportunities, get in touch through any channel below.
+            software positions, any of the channels below works.
           </p>
         </div>
 
