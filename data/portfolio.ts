@@ -298,9 +298,9 @@ export const portfolioData = {
   ] satisfies Certification[],
   beyondEngineering: [
     {
-      title: "Beatbox & Music Production",
+      title: "Music Production",
       description:
-        "I beatbox and produce electronic music, and I compete internationally — most recently at the Grand Beatbox Battle in Warsaw.",
+        "I produce and experiment with electronic music.",
     },
     {
       title: "Hardware & Prototyping",
