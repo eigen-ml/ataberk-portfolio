@@ -1,100 +1,36 @@
-import {
-  ArrowUpRight,
-  Code2,
-  Mail,
-  SquareUserRound,
-} from "lucide-react";
-import {
-  getProfileHref,
-  isConfiguredLink,
-  portfolioData,
-} from "@/data/portfolio";
+import { site, type Content } from "@/data/content";
 
-const contactItems = [
-  {
-    key: "email",
-    label: "Email",
-    value: portfolioData.person.links.email,
-    icon: Mail,
-    kind: "email" as const,
-  },
-  {
-    key: "linkedin",
-    label: "LinkedIn",
-    value: portfolioData.person.links.linkedin,
-    icon: SquareUserRound,
-    kind: "external" as const,
-  },
-  {
-    key: "github",
-    label: "GitHub",
-    value: portfolioData.person.links.github,
-    icon: Code2,
-    kind: "external" as const,
-  },
-];
-
-export function Contact() {
+export function Contact({ copy }: { copy: Content }) {
   return (
-    <section
-      id="contact"
-      className="contact-section"
-      aria-labelledby="contact-title"
-    >
-      <div className="contact-grid" aria-hidden="true" />
-      <div className="shell contact-layout" data-reveal="section">
-        <div className="contact-copy">
-          <p className="eyebrow">08 · Contact</p>
-          <h2 id="contact-title">Get in touch</h2>
-          <p>
-            For computational science, materials modelling, HPC or scientific
-            software positions, any of the channels below works.
-          </p>
-        </div>
+    <>
+      <section className="contact" id="contact" aria-labelledby="contact-title">
+        <div className="contact-glow" aria-hidden="true" />
+        <div className="shell contact-inner" data-reveal="section">
+          <div>
+            <h2 id="contact-title">{copy.contact.heading}</h2>
+            <p>{copy.contact.body}</p>
+            <p className="aside">{copy.contact.aside}</p>
+          </div>
 
-        <div className="contact-links">
-          {contactItems.map((item) => {
-            const Icon = item.icon;
-            const configured = isConfiguredLink(item.value);
-            const content = (
-              <>
-                <span className="contact-icon">
-                  <Icon size={19} strokeWidth={1.6} aria-hidden="true" />
-                </span>
-                <span className="contact-link-copy">
-                  <small>{item.label}</small>
-                  <strong>
-                    {configured ? item.value : "Add in data/portfolio.ts"}
-                  </strong>
-                </span>
-                <ArrowUpRight
-                  className="contact-arrow"
-                  size={18}
-                  strokeWidth={1.6}
-                  aria-hidden="true"
-                />
-              </>
-            );
-
-            return configured ? (
-              <a
-                key={item.key}
-                href={getProfileHref(item.value, item.kind)}
-                target={item.kind === "external" ? "_blank" : undefined}
-                rel={
-                  item.kind === "external" ? "noopener noreferrer" : undefined
-                }
-              >
-                {content}
-              </a>
-            ) : (
-              <div className="contact-link-placeholder" key={item.key}>
-                {content}
-              </div>
-            );
-          })}
+          <a className="contact-email" href={"mailto:" + site.email}>
+            {site.email} &rarr;
+          </a>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <footer>
+        <div className="shell site-footer">
+          <span>{copy.footer.rights}</span>
+          <span style={{ display: "flex", gap: "1.25rem" }}>
+            <a href={site.github} target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </span>
+        </div>
+      </footer>
+    </>
   );
 }
